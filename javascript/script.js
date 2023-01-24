@@ -139,8 +139,8 @@ function animate() {
 
 let myIndex = 0
 let myVideos = [
-  'video2.mp4',
-  'video1.mp4',
+  'img/video2.mp4',
+  'img/video1.mp4',
 ]
 function backgroundChanger() {
   myIndex += 1
@@ -148,3 +148,4 @@ function backgroundChanger() {
     myIndex = 0
   document.querySelector("video").src = myVideos[myIndex]
 }
+

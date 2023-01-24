@@ -1,0 +1,228 @@
+*{
+    
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+}
+body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    position: relative;
+    background-color: #8a6548;
+    
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  padding:30px 9%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0 ,0 ,0.00);
+}
+header .icons{
+  display: flex;
+  position:fixed;
+  right:25px;
+  top: 30px;
+  
+}
+header .icons a{
+  font-size: 23px;
+  color:white;
+  margin-left: 24px;
+  text-decoration: none;
+  
+  margin: 0 13px;
+}
+.icons a:hover{
+  transform: scale(1.04);
+}
+header .icons h{
+  color: #fff;
+  font-size: 16px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+header #logo{
+  display: flex;
+  position:fixed;
+  left:2px;
+  top: 3px;
+  width: 160px;
+}
+
+#shopcard{
+  width:100%;
+  position:fixed;
+}
+
+nav{
+  position:fixed;
+  bottom:-2px;
+  left:-17px;
+}
+nav .menu ul {
+  width: 250px;
+  padding: 0;
+}
+nav.menu ul li{
+  margin-bottom: 32px;
+  width: auto;
+  height: 16px;
+  list-style: none;
+}
+nav.menu ul li a{
+  font-weight: 200;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  display:flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.social-icon{
+  display:flex;
+  position:fixed;
+   right: 15px;
+   bottom:12px;
+}
+
+.social-icon li{
+  list-style: none;
+  margin: 0 13px;
+  font-size:23px;
+}
+.social-icon li a {
+  position:relative;
+  display:flex;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icon li:nth-child(1) a:hover{
+  transform: scale(1.05);
+  color: #3b5999;
+}
+.social-icon li:nth-child(2) a:hover{
+  transform: scale(1.05);
+  color: #55acee;
+}
+.social-icon li:nth-child(3) a:hover{
+  transform: scale(1.05);
+  color: #e4405f;
+}
+.social-icon li:nth-child(4) a:hover{
+  transform: scale(1.05);
+  color: #dd4b39;
+}
+
+#shop{
+  position: relative;
+  display: block;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom:100px;
+}
+
+canvas {
+  display: block;
+  outline-style: none;
+  margin: 0 auto;
+  position:fixed;
+  margin-top: 53px;
+}
+
+#canvas_container {
+  width: 90%;
+  height:90vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top:50%;
+}
+
+header .form-horizontal{
+margin-left: auto;
+  margin-right: auto;
+}
+
+.fancy-toggle .form-control {
+  background: #8a6548;
+  width: 140px;
+  height: 32px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3px;
+}
+.fancy-toggle label {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+  float: left;  
+  transition: all 0.35s ease 0s;
+  position: absolute;
+  border-radius: 15px;
+  background: #b8b4b4;
+}
+.fancy-toggle label span {
+  color: #FFFFFF;
+  line-height: 32px;
+  display: block;
+  padding: 0px 10px;
+  font-weight: 200;
+}
+.fancy-toggle input.on + label {
+  background: red;
+}
+.fancy-toggle input.off + label {
+  background: #b8b4b4;
+}
+.fancy-toggle input.off + label span {
+  text-align: right;
+}
+.fancy-toggle input,
+.fancy-toggle input:checked + label {
+  display: none;
+}
+.fancy-toggle .indicator {
+  pointer-events: none;
+  position: absolute;
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(245, 245, 245);
+  transition: all 0.35s ease 0s;
+  box-shadow: rgb(0 0 0 / 22%) 0px 4px 10px -3px,
+              rgb(0 0 0 / 17%) 0px 6px 7px 0px,
+              rgb(0 0 0 / 15%) 0px 3px 12px 0px;
+}
+.fancy-toggle input.on:checked ~ .indicator {
+  left: 0%;
+  margin-left: 2px;
+}
+.fancy-toggle input.off:checked ~ .indicator {
+  left: 100%;
+  margin-left: -30px;
+}

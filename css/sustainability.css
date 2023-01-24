@@ -1,0 +1,367 @@
+*{
+    
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+}
+body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    position: relative;
+    background-color: #faf7f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  height: 88px;
+  display:flex;
+  align-items: center;
+  background-color: #faf7f5;
+  transition: all 80ms ease-out;
+  z-index: 999;
+  transition: box-shadow 0.15s ease-in-out 0s;
+}
+header.scrolled {
+  box-shadow: 0px 0px 1px rgb(0, 0, 0.01);
+}
+header .icons{
+  display: flex;
+  position:fixed;
+  right:25px;
+  top: 30px;
+  
+}
+header .icons a{
+  font-size: 23px;
+  color:#312923;
+  margin-left: 24px;
+  text-decoration: none;
+  
+  margin: 0 13px;
+}
+.icons a:hover{
+  transform: scale(1.04);
+}
+header .icons h{
+  color: #312923;
+  font-size: 16px;
+}
+
+header #logo{
+  display: flex;
+  position:fixed;
+  left:2px;
+  top: 3px;
+  width: 160px;
+}
+
+#shopcard{
+  width:100%;
+  position:fixed;
+}
+
+nav{
+  position:fixed;
+  bottom:-2px;
+  left:-17px;
+}
+nav .menu ul {
+  width: 250px;
+  padding: 0;
+}
+nav.menu ul li{
+  margin-bottom: 32px;
+  width: auto;
+  height: 16px;
+  list-style: none;
+}
+nav.menu ul li a{
+  font-weight: 200;
+  text-decoration: none;
+  color: #312923;
+  font-size: 17px;
+  display:flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.social-icon{
+  display:flex;
+  position:fixed;
+   right: 15px;
+   bottom:12px;
+}
+
+.social-icon li{
+  list-style: none;
+  margin: 0 13px;
+  font-size:23px;
+}
+.social-icon li a {
+  position:relative;
+  display:flex;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #312923;
+}
+
+.social-icon li:nth-child(1) a:hover{
+  transform: scale(1.05);
+  color: #3b5999;
+}
+.social-icon li:nth-child(2) a:hover{
+  transform: scale(1.05);
+  color: #55acee;
+}
+.social-icon li:nth-child(3) a:hover{
+  transform: scale(1.05);
+  color: #e4405f;
+}
+.social-icon li:nth-child(4) a:hover{
+  transform: scale(1.05);
+  color: #dd4b39;
+}
+.footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    position: absolute;
+}
+
+.copyright{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.235;
+  display: flex;
+  margin-bottom: 28px;
+  color: #312923;
+}
+#back-top {
+  position: fixed; 
+  display:none; 
+  bottom: 80px; 
+  right:20px; 
+  width:auto;
+}
+a#back-top:active {
+  background:none;
+}
+a#back-top {
+  display: block; 
+  text-decoration: none;
+}
+.topup {
+  bottom:5px;
+}
+#back-top i {
+  display:block;
+}
+
+.sus{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 120px 48px;
+    height: 100%;
+}
+.sus .sus-body{
+  flex-grow: 0;
+  width: 70%;
+}
+.sus .sus-img{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.text{
+  margin-top: 38px;
+  flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 48px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+.text-body{
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+ 
+    line-height: 2;
+    padding-bottom: 24px;
+}
+.text1{
+    padding-bottom: 1px;
+    line-height: 2;
+}
+h4{
+  font-weight: 200;
+}
+.our{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.our-img{
+  padding: 48px 0px;
+}
+.cer{
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.cer-body{
+  width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.cer-body-img{
+  width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.cer-img{
+  flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    height: 130px;
+    width: 110px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.accordion1 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 93%;
+  margin-bottom: 20px;
+}
+.accordion {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.accordion-header,
+.accordion-body {
+  background:#faf7f5;
+}
+
+.accordion-header {
+  padding: 2em 1em;
+  background:#faf7f5;
+  color:#312923;
+  cursor: pointer;
+  font-size: 0.9em;
+  letter-spacing: .1em;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.accordion__item {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    transition: box-shadow 0.15s ease-in-out 0s;
+   
+}
+
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background:#faf7f5;
+  color: #353535;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 0.7em 1em;
+  font-size: .85em;
+  font-weight: 200;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item  .accordion-header:after {
+  content:url('../img/accordion-icon.png');
+  font-size: 1.5;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+  
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+
+
+.accordion__item .accordion__item .accordion-header {
+  background: #faf7f5;
+  color:#312923;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
+}
+

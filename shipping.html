@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Restore The Earth</title>
+  <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/shipping.css">
+  
+</head>
+  <body>
+    <header id="navBar">
+      <a href="index.html"><img id="logo" src="img/logo2.png" alt=""></a>
+      <div class="icons">
+        <a href="user.html" class="fa fa-user"></a>
+        <a href="cart.html" class="fa fa-shopping-cart"></a>
+      </div>
+    </header>
+    <div id="wrapper">
+      <h4 class="title">SHIPPING PRICES</h4>
+      <div class="shipping">
+        <div class="select-form">
+          <select class="input-select" id="mySelect" onchange="getddl()">
+            <option value="200">Aichi</option>
+            <option value="200">Akita</option>
+            <option value="250">Aomori</option>
+            <option value="250">Chiba</option>
+            <option value="250">Ehime</option>
+            <option value="250">Fukui</option>
+            <option value="300">Fukuoka</option>
+            <option value="250">Fukushima</option>
+            <option value="250">Gifu</option>
+            <option value="200">Gunma</option>
+            <option value="250">Hiroshima</option>
+            <option value="350">Hokkaidō</option>
+            <option value="250">Hyōgo</option>
+            <option value="200">Ibaraki</option>
+            <option value="250">Ishikawa</option>
+            <option value="250">Iwate</option>
+            <option value="250">Kagawa</option>
+            <option value="300">Kagoshima</option>
+            <option value="200">Kanagawa</option>
+            <option value="300">Kumamoto</option>
+            <option value="250">Kyōto</option>
+            <option value="250">Mie</option>
+            <option value="250">Miyagi</option>
+            <option value="300">Miyazaki</option>
+            <option value="250">Nagano</option>
+            <option value="300">Nagasaki</option>
+            <option value="250">Nara</option>
+            <option value="250">Niigata</option>
+            <option value="300">Ōita</option>
+            <option value="250">Okayama</option>
+            <option value="300">Okinawa</option>
+            <option value="250">Ōsaka</option>
+            <option value="300">Saga</option>
+            <option value="200">Saitama</option>
+            <option value="250">Shiga</option>
+            <option value="250">Shimane</option>
+            <option value="250">Shizuoka</option>
+            <option value="200">Tochigi</option>
+            <option value="250">Tokushima</option>
+            <option value="200">Tokyo</option>
+            <option value="250">Tottori</option>
+            <option value="250">Toyama</option>
+            <option value="250">Wakayama</option>
+            <option value="250">Yamagata</option>
+            <option value="250">Yamaguchi</option>
+            <option value="250">Yamanashi</option>
+            </select> 
+        </div>
+        
+        <div class="jsUTiK" id="text1">
+          <div class="iypgkC">
+            <div class="cfBVjZ">The shipping price for one item  -  <label id="one">¥0</label></div>
+          </div><div class="iypgkC">
+            <div class="cfBVjZ">The shipping price for three or more items (order value less than ¥2000)  -  <label id="three">¥0</label></div></div>
+          <div class="iypgkC">
+            <div class="cfBVjZ">To receive free shipping, your order value has to be over ¥2000</div>
+          </div>
+        </div>
+        </div>
+        <div class='modal-container' id="modal">
+          <div class="modal-content">
+             <span class='modal-loader'></span>
+             <p class='modal-msg'>The shipping prices are being fetched, please wait.</p>
+          </div>	
+        </div>
+        </div>
+      
+
+    <ul class="social-icon">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    </ul>
+    <nav class="menu">
+      <ul>
+        <li><a href="shipping.html">SHIPPING PRICES</a></li>
+        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="shop.html">PRODUCTS</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="terms.html">TERMS</a></li>
+      </ul>
+      </nav>
+      <footer class="footer">
+        <div class="copyright">
+          © 2023 RESTORE THE EARTH
+        </div>
+      </footer>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+    <script src="javascript/shipping.js"></script>
+  </body>
+</html>

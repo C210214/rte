@@ -1,0 +1,199 @@
+*{
+    
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+}
+body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    position: relative;
+    background-color: #faf7f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  height: 88px;
+  display:flex;
+  align-items: center;
+  background-color: #faf7f5;
+  transition: all 80ms ease-out;
+  z-index: 999;
+}
+header.scrolled {
+  box-shadow: 0px 0px 1px rgb(0, 0, 0.01);
+}
+header .icons{
+  display: flex;
+  position:fixed;
+  right:25px;
+  top: 30px;
+  
+}
+header .icons a{
+  font-size: 23px;
+  color:#312923;
+  margin-left: 24px;
+  text-decoration: none;
+  
+  margin: 0 13px;
+}
+.icons a:hover{
+  transform: scale(1.04);
+}
+header .icons h{
+  color: #312923;
+  font-size: 16px;
+}
+
+header #logo{
+  display: flex;
+  position:fixed;
+  left:2px;
+  top: 3px;
+  width: 160px;
+}
+
+#shopcard{
+  width:100%;
+  position:fixed;
+}
+
+nav{
+  position:fixed;
+  bottom:-2px;
+  left:-17px;
+}
+nav .menu ul {
+  width: 250px;
+  padding: 0;
+}
+nav.menu ul li{
+  margin-bottom: 32px;
+  width: auto;
+  height: 16px;
+  list-style: none;
+}
+nav.menu ul li a{
+  font-weight: 200;
+  text-decoration: none;
+  color: #312923;
+  font-size: 17px;
+  display:flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.social-icon{
+  display:flex;
+  position:fixed;
+   right: 15px;
+   bottom:12px;
+}
+
+.social-icon li{
+  list-style: none;
+  margin: 0 13px;
+  font-size:23px;
+}
+.social-icon li a {
+  position:relative;
+  display:flex;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #312923;
+}
+
+.social-icon li:nth-child(1) a:hover{
+  transform: scale(1.05);
+  color: #3b5999;
+}
+.social-icon li:nth-child(2) a:hover{
+  transform: scale(1.05);
+  color: #55acee;
+}
+.social-icon li:nth-child(3) a:hover{
+  transform: scale(1.05);
+  color: #e4405f;
+}
+.social-icon li:nth-child(4) a:hover{
+  transform: scale(1.05);
+  color: #dd4b39;
+}
+.footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+}
+
+.copyright{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.235;
+  display: flex;
+  margin-bottom: 28px;
+  color: #312923;
+}
+.box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box #form{
+  position: relative;
+}
+.box #form #email{
+  display: block;
+  background: transparent;
+  outline: none;
+  width: 350px;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  position: relative;
+  z-index: 10;
+  background: #faf7f5;
+  font-weight: 500;
+  color: #312923;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+.box #submit{
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  font-weight: 400;
+  
+  
+}
+.box #submitemail{
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #faf7f5;
+  color: #312923;
+  display: none;
+  align-items: center;
+  justify-content:space-around;
+  margin: auto;
+}
