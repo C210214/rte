@@ -1,7 +1,7 @@
-*{
-    
-    font-family: "Roboto",sans-serif;
-    font-weight:bold;
+* {
+  font-family: cursive;
+  font-weight: bold;
+
 }
 body {
     width: 100%;
@@ -173,4 +173,156 @@ nav.menu ul li a{
     letter-spacing: 0.1em;
     position: relative;
     margin-bottom: 40px;
+  }
+  
+
+  .mobile-screen{
+    position: absolute;
+    margin: auto;
+    top: 365px; left: 0; bottom: 0; right: 0;
+    width: 467px;
+    height: 550px;
+    overflow: hidden;
+  }
+  
+  .headers{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  h1{
+    text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      height: unset;
+      margin-top: 10px;
+      font-size: 2.325rem;
+      font-weight: 400;
+      line-height: 1.235;
+      letter-spacing: 0.00735em;
+      color: #312923;
+  }
+  
+  form{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+  }
+  
+  input,
+  .login-btn{
+    position: relative;
+    display: block;
+    margin: 17px auto;
+    padding: 14px;
+    width: 84%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: 200;
+    font-size: 17px;
+  }
+  
+  input{
+    border: none;
+    border-radius: 7px;
+    background: none;
+    border-color: #886e5a;
+    color: #312923;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 17px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  
+  input:focus{
+    outline: 0;
+    border:1px solid #886e5a;
+    border-radius: 10px;
+    border-color:  #886e5a;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .login-btn{
+    border-radius: 4px;
+    text-align: center;
+    background: #886e5a;
+    color: #faf7f5;
+    transition: 0.3s;
+  }
+  .login-btn:hover{
+    background-color: #312923;
+  }
+  
+  .other-options{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 2px;
+    left: 0;
+    align-items: center;
+    display: flex;
+  }
+  
+  .option{
+    position: relative;
+    display: block;
+    float: right;
+    width: 45%;
+    margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+   color: #312923;
+    cursor: pointer;
+  }
+  
+  .option:first-child{
+    float: left;
+    
+  }
+  
+  .option:last-child{
+    margin-right: 3.3%;
+  }
+  
+  .option-text{
+    position: relative;
+    margin: 0;
+    line-height: 30px;
+    color: #312923;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .option-text:hover{
+    opacity: 0.7;
+  }
+  
+  #fpass-form,
+  #registration-form{
+    display: none;
+  }
+  
+  
+  .change-colors-container{
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(255,255,255,.5);
   }

@@ -1,40 +1,30 @@
-var thumbs = $('.img-selection').find('img');
+const activeImage = document.querySelector(".product-image .active");
+const productImages = document.querySelectorAll(".image-list img");
 
-thumbs.click(function(){
-  var src = $(this).attr('src');
-  var dp = $('.display-img');
-  var img = $('.zoom');
-  dp.attr('src', src);
-  img.attr('src', src);
-});
+function changeImage(e) {
+  activeImage.src = e.target.src;
+}
+productImages.forEach(image => image.addEventListener("click", changeImage));
+navItem.addEventListener('click', toggleNavigation);
 
-$(".img-thumbnail").click(function(){
-  $('.img-thumbnail').removeClass('selected');
-  $(this).addClass('selected');
-});
 
-var zoom = $('.big-img').find('img').attr('src');
-$('.big-img').append('<img class="zoom" src="'+zoom+'">');
-$('.big-img').mouseenter(function(){
-  $(this).mousemove(function(event){
-    var offset = $(this).offset();
-    var left = event.pageX - offset.left;
-    var top = event.pageY - offset.top;
-    
-    $(this).find('.zoom').css({
-      width: '200%',
-      opacity: 1,
-      left: -left,
-      top: -top,
-    });
+$(document).ready(function(){
+  $("h1, p").delay("1000").fadeIn();
+  $("#back-top").hide();
+  $(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+              $('#back-top').fadeIn();
+          } else {
+              $('#back-top').fadeOut();
+          }
+      });
+  
+      $('a#back-top').click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
+          return false;
+      });
   });
-});
-
-$('.big-img').mouseleave(function(){
-  $(this).find('.zoom').css({
-    width: '100%',
-    opacity: 0,
-    left: 0,
-    top: 0,
   });
-});

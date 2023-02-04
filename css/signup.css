@@ -1,7 +1,6 @@
-*{
-    
-    font-family: "Roboto",sans-serif;
-    font-weight:bold;
+* {
+  font-family: cursive;
+  font-weight: bold;
 }
 body {
     width: 100%;
@@ -164,6 +163,7 @@ nav.menu ul li a{
   display: block;
   background: transparent;
   outline: none;
+  user-select: text;
   width: 350px;
   padding: 10px 0;
   font-weight: 500;

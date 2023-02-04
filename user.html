@@ -6,35 +6,52 @@
   <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/thanks.css">
   
 </head>
   <body>
-    <video autoplay muted loop id="myVideo">
-      <source src="img/video2.mp4" type="video/mp4">
-    </video>
-    <header>
-      <a href="index.html"><img id="logo" src="img/logo1.png" alt=""></a>
-      <form class="form-horizontal">
-        <div class="form-group fancy-toggle">
-          <div class="form-control">
-            <input type="radio" name="reality-onoff" value="1" id="reality-on" class="on" checked />
-            <label onclick="backgroundChanger()" for="reality-on"><span>REALITY ON</span></label>
-            <input type="radio" name="reality-onoff" value="1" id="reality-off" class="off"  />
-            <label onclick="backgroundChanger()" for="reality-off"><span>REALITY OFF</span></label>
-            <div class="indicator"></div>
-          </div>
-        </div>
-      </form>
+    <header id="navBar">
+      <a href="index.html"><img id="logo" src="img/logo2.png" alt=""></a>
       <div class="icons">
         <a href="user.html" class="fa fa-user"></a>
         <a href="cart.html" class="fa fa-shopping-cart"></a>
       </div>
     </header>
     <div id="wrapper">
-    
-    <div id="canvas_container"></div>
-    <a id="shopcard" href="shop.html"><img id="shop" src="img/shop.png" alt=""></a>
+      <div class="mobile-screen">
+        <div class="headers">
+          <h1>Log in</h1>
+        </div>
+        
+        <div class="logo"></div>
+        
+        <form id="registration-form">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="password" name="pass" placeholder="Password">
+          <input type="password" name="repass" placeholder="Repeat password">
+          <a href="#" class="login-btn" id="signup-btn">SIGN UP</a>
+        </form>
+      
+        <form id="login-form">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="password" name="pass" placeholder="Password">
+          <a href="#" class="login-btn">LOG IN</a>
+        </form>
+        
+        <form id="fpass-form">
+          <input type="text" name="forgotten" placeholder="E-mail or phone number">
+          <a href="#" class="login-btn" id="getpass-btn">GET PASSWORD</a>
+        </form>
+        
+        <div class="other-options">
+          <div class="option" id="newUser"><p class="option-text">NEW USER</p></div>
+          <div class="option" id="fPass"><p class="option-text"> FORGOTTEN PASSWORD</p></div>
+        </div>
+        
+      </div>
+      <!-- partial -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     <ul class="social-icon">
       <li><a href="https://www.instagram.com/k26.ssk/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
       <li><a href="https://www.instagram.com/k26.ssk/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -51,13 +68,16 @@
         <li><a href="terms.html">TERMS</a></li>
       </ul>
       </nav>
-      
+      <footer class="footer">
+        <div class="copyright">
+          © 2023 RESTORE THE EARTH
+        </div>
+      </footer>
   </div>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/thanks.js"></script>
   </body>
 </html>

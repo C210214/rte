@@ -1,7 +1,6 @@
-*{
-    
-    font-family: "Roboto",sans-serif;
-    font-weight:bold;
+* {
+  font-family: cursive;
+  font-weight: bold;
 }
 body {
     width: 100%;
@@ -148,19 +147,24 @@ nav.menu ul li a{
   margin-bottom: 28px;
   color: #312923;
 }
-#send{
-    display: none;
+
+
+.thank-you{
     align-items: center;
     justify-content: center;
     width: 100%;
+    display: contents;
 }
-#send .form-success {
+.hidden{
+  display: none;
+}
+.form-success {
   color: #56ad6a;
   background-color: #ecfef0;
   border-color: #56ad6a;
   border: #56ad6a;
 }
-#send .note{
+.note{
   border-radius: 3px;
   padding: 15px 12px;
   margin-bottom: 10px;
@@ -170,6 +174,10 @@ nav.menu ul li a{
   width: 79%;
   text-align: center;
 }
+input.invalid{
+  border: 1px solid red;
+}
+
 .contact {
   padding: 130px 0;
   flex-direction: column;
@@ -198,7 +206,7 @@ nav.menu ul li a{
   display: flex;
   align-items: center;
   justify-content: center;
-    margin-top: 30px;
+  margin-top: 30px;
   padding: 0;
   margin-left: 8px;
 }
@@ -266,8 +274,9 @@ nav.menu ul li a{
     font-size: 15px;
     margin-bottom: 10px;
     background: #ffffff;
-    border: 0;
     border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
     width: 90%;
     font-weight: 500;
     letter-spacing: 0.07em;
@@ -278,11 +287,22 @@ nav.menu ul li a{
   font-size: 15px;
   margin-bottom: 10px;
   background: #ffffff;
-  border: 0 ;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 10px;
   width: 80%;
   font-weight: 500;
     letter-spacing: 0.07em;
+}
+input:focus{
+  outline: 0;
+  border:1px solid #886e5a;
+  border-color:  #886e5a;
+}
+textarea:focus{
+  outline: 0;
+  border:1px solid #886e5a;
+  border-color:  #886e5a;
 }
 .title{
   margin-top:-15px;
@@ -346,4 +366,7 @@ nav.menu ul li a{
     font-size: 13px;
     font-weight: 300;
     color: #868080;
+}
+#comment{
+  height: 100px;
 }

@@ -1,7 +1,6 @@
-*{
-    
-    font-family: "Roboto",sans-serif;
-    font-weight:bold;
+* {
+  font-family: cursive;
+  font-weight: bold;
 }
 body {
     width: 100%;
@@ -197,8 +196,9 @@ a#back-top {
 }
 .title1{
     text-transform: uppercase;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     font-weight: 700;
+    font-size: 18px;
 }
 .text1{
     font-weight: 200;

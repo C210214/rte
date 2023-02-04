@@ -1,7 +1,6 @@
-*{
-    
-    font-family: "Roboto",sans-serif;
-    font-weight:bold;
+* {
+  font-family: cursive;
+  font-weight: bold;
 }
 body {
     width: 100%;
@@ -190,7 +189,8 @@ margin-left: auto;
   line-height: 32px;
   display: block;
   padding: 0px 10px;
-  font-weight: 200;
+  font-weight: 600;
+  font-size: 14px;
 }
 .fancy-toggle input.on + label {
   background: red;
