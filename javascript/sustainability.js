@@ -68,3 +68,16 @@ $(document).ready(function(){
       $(document).ready(function(){
         accordion.init({ speed: 300, oneOpen: true });
       });
+
+
+      var navBar = document.getElementById("navBar");
+      window.onscroll = function() {
+        if (window.scrollY > 22) {
+          navBar.classList.add("scrolled");
+        } else {
+          navBar.classList.remove("scrolled");
+        }
+      };
+
+
+      
