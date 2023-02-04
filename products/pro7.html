@@ -139,27 +139,6 @@
   <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-    <script src="../javascript/pro.js"></script>  
     <script src="../javascript/shop.js"></script>  
-    <script>
-      $('input.input-qty').each(function() {
-        var $this = $(this),
-          qty = $this.parent().find('.is-form'),
-          min = Number($this.attr('min')),
-          max = Number($this.attr('max'))
-        if (min == 0) {
-          var d = 0
-        } else d = min
-        $(qty).on('click', function() {
-          if ($(this).hasClass('minus')) {
-            if (d > min) d += -1
-          } else if ($(this).hasClass('plus')) {
-            var x = Number($this.val()) + 1
-            if (x <= max) d += 1
-          }
-          $this.attr('value', d).val(d)
-        })
-      })
-      </script>
   </body>
 </html>
