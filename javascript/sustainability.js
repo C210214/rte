@@ -1,3 +1,13 @@
+var navBar = document.getElementById("navBar");
+window.onscroll = function() {
+  if (window.scrollY > 22) {
+    navBar.classList.add("scrolled");
+  } else {
+    navBar.classList.remove("scrolled");
+  }
+};
+
+
 $(document).ready(function(){
     $("h1, p").delay("1000").fadeIn();
     $("#back-top").hide();
@@ -70,14 +80,6 @@ $(document).ready(function(){
       });
 
 
-      var navBar = document.getElementById("navBar");
-      window.onscroll = function() {
-        if (window.scrollY > 22) {
-          navBar.classList.add("scrolled");
-        } else {
-          navBar.classList.remove("scrolled");
-        }
-      };
-
+     
 
       
