@@ -19,7 +19,7 @@ function init() {
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 1, 1000)
-    camera.position.set(100,10,240);
+    camera.position.set(90,10,240);
 
     const directionalLight = new THREE.DirectionalLight("#ffffff", 0.6);
     directionalLight.position.set(0, 50, 5);
@@ -150,8 +150,12 @@ function backgroundChanger() {
 }
 
 
-
 setTimeout(()=>{
     const load = document.getElementById('load');
     load.style.display = 'none';
-}, 2500)
+}, 3000)
+
+let load = document.getElementById('load');
+window.onload = function(){
+    load.remove();
+}
