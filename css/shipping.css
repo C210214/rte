@@ -170,7 +170,7 @@ header #logo{
 
 nav{
   position:fixed;
-  bottom:0px;
+  bottom:-2px;
   left:-17px;
 }
 nav .menu ul {
