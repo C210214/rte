@@ -56,6 +56,37 @@ header #logo{
   left:2px;
   top: 3px;
   width: 160px;
+  z-index: 99;
+}
+.logo{
+  height: 86px;
+  width: 166px;
+}
+#hr{
+  width: 32px;
+  position: absolute;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 118px;
+    top: 13%;
+    z-index: 9;
+    -webkit-animation: animationLoad 20s linear infinite;
+    -moz-animation: animationLoad 20s linear infinite;
+    animation: animationLoad  20s linear infinite;
+}
+
+@keyframes animationLoad{
+  0%{
+    transform: rotate(0); scale: (1);
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 #shopcard{
