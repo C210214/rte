@@ -252,7 +252,9 @@ nav.menu ul li a{
   margin-bottom: 28px;
   color: #312923;
 }
-
+#wrapper{
+  margin-top: 18px;
+}
 
 .thank-you{
     align-items: center;

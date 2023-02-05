@@ -257,7 +257,7 @@ nav.menu ul li a{
   flex-grow: 0;
     max-width: 35.666667%;
     flex-basis: 35.666667%;
-
+  margin-top: 18px;
 }
 .title{
   text-transform: uppercase;

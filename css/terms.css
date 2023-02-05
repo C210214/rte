@@ -295,6 +295,7 @@ a#back-top {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
+    margin-top: -3px;
 }
 .title1{
     text-transform: uppercase;
