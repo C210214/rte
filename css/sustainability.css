@@ -366,8 +366,8 @@ h1{
 }
 
 .col{
-  width: calc(25% - 1rem);
-  margin: 10px 25px;
+  width: calc(26% - 1rem);
+  margin: 10px 23px;
   cursor: pointer;
 }
 
