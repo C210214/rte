@@ -150,10 +150,6 @@ function backgroundChanger() {
 }
 
 
-setTimeout(()=>{
-    const load = document.getElementById('load');
-    load.style.display = 'none';
-}, 3000)
 
 let load = document.getElementById('load');
 window.onload = function(){
