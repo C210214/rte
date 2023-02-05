@@ -154,4 +154,4 @@ function backgroundChanger() {
 setTimeout(()=>{
     const load = document.getElementById('load');
     load.style.display = 'none';
-}, 2000)
+}, 2500)
