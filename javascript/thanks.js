@@ -24,7 +24,7 @@ $("#newUser").click(function(){
   });
   
   $("#fPass").click(function(){
-    $("h1").text("Forgotten password");
+    $("h1").text("Forgot password");
     $(".logo").css({
       "width":"190px",
       "height":"190px",

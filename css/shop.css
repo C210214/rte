@@ -69,8 +69,8 @@ header li > a{
 header .right{
   display: flex;
   position:fixed;
-  right:20px;
-  top: 15px;
+  right:25px;
+  top: 14px;
   
 }
 header .right i{
@@ -168,10 +168,6 @@ header #logo{
   }
 }
 
-#shopcard{
-  width:100%;
-  position:fixed;
-}
 
 nav{
   position:fixed;

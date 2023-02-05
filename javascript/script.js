@@ -112,7 +112,6 @@ function init() {
     }
 }
 
-
 function animate() {
 
     stars.geometry.vertices.forEach(function (v) {
@@ -136,7 +135,6 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-
 let myIndex = 0
 let myVideos = [
   'img/video2.mp4',
@@ -148,7 +146,6 @@ function backgroundChanger() {
     myIndex = 0
   document.querySelector("video").src = myVideos[myIndex]
 }
-
 
 setTimeout(()=>{
     const load = document.getElementById('load');

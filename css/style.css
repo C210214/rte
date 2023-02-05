@@ -38,10 +38,6 @@ body {
     left: 0;
     top: 39%;
 }
-
-  
-
-
 @keyframes animationLoad{
   0%{
     transform: rotate(0); scale: (1);
@@ -55,6 +51,14 @@ body {
     transform: rotate(360deg) scale(1);
   }
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 header{
   position:fixed;
   top:0;
@@ -68,22 +72,98 @@ header{
   box-shadow: 0 5px 15px rgba(0, 0 ,0 ,0.00);
   height: 30px;
 }
-header .icons{
+ul{
+  list-style: none;
+}
+.header-top .wrapper ul{
+  gap: 2em;
+}
+.header-top li{
+  position: relative;
+  display: flex;
+    position: relative;
+    line-height: inherit;
+}
+.header-top ul ul{
+  position: absolute;
+  left: -1em;
+  line-height: 2em;
+  background-color: #312923;
+  border: 1px solid #312923;
+  z-index: 1;
+  display: none;
+}
+.header-top .right ul ul li a{
+  padding: 0.25em 1em;
+}
+.header-top.right ul ul li.current a{
+  background-color: #faf7f5;
+}
+.header-top li:hover ul{
+  display: block;
+}
+
+header li > a{
+  display: flex;
+  position: relative;
+  line-height: inherit;
+}
+header .right{
   display: flex;
   position:fixed;
   right:25px;
-  top: 30px;
+  top: 14px;
   
 }
-header .icons a{
+header .right i{
   font-size: 23px;
-  color:white;
+  color:#fff;
   margin-left: 24px;
   text-decoration: none;
-  
   margin: 0 13px;
 }
-.icons a:hover{
+.header-nav nav > ul{
+  line-height: 100px;
+  gap: 2em;
+}
+.fly-item{
+  position:absolute;
+  right:-1%;
+  top:-30%;
+  font-size:70%;
+  padding:.2em;
+  border-radius:50%;
+  line-height:1em;
+  color:#312923;
+  background:#fff;
+  text-align:center;
+  min-width: 1em;
+  font-weight: 200;
+}
+nav .fly-item{
+  top: 50%;
+  margin-top: -24px;
+  width: 30px;
+  border-radius: 3px;
+  right: -32px;
+  background-color: #fff;
+}
+.header-nav .right{
+  position: relative;
+  margin-left: auto;
+}
+.header-nav .right .icon-large{
+  position: relative;
+}
+.header-nav .right .fly-item{
+  top: 0;
+  right: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.icons i:hover{
   transform: scale(1.04);
 }
 header .icons h{
@@ -91,27 +171,12 @@ header .icons h{
   font-size: 16px;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-
 header #logo{
   display: flex;
   position:fixed;
   left:2px;
   top: 3px;
   width: 160px;
-}
-
-
-#shopcard{
-  width:100%;
-  position:fixed;
 }
 
 nav{
