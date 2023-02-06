@@ -152,4 +152,3 @@ window.onload = function loadDefFrame() {
     setTimeout(function () {
      load.style.display = 'none';
    },3000)};
-

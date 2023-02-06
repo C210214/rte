@@ -284,6 +284,9 @@ nav.menu ul li a{
 input.invalid{
   border: 1px solid red;
 }
+textarea.invalid{
+  border: 1px solid red;
+}
 
 .contact {
   padding: 130px 0;

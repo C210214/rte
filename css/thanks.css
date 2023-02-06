@@ -352,7 +352,23 @@ nav.menu ul li a{
   a{
     text-decoration: none;
   }
-  
+  #av{
+    font-size: 25px;
+  }
+  .backlogin{
+    position: relative;
+    margin: 0;
+    line-height: 30px;
+    color: #312923;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+    left: 87%;
+    transition: 0.3s;
+  }
+  .backlogin:hover{
+    opacity: 0.7;
+  }
   .login-btn{
     border-radius: 4px;
     text-align: center;
@@ -405,6 +421,8 @@ nav.menu ul li a{
     text-align: center;
     font-size: 13px;
     font-weight: 100;
+    transition: 0.3s;
+
   }
   .option-text:hover{
     opacity: 0.7;
