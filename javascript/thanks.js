@@ -35,3 +35,68 @@ $("#newUser").click(function(){
     $("#fpass-form").delay(200).fadeIn(500);
     $(".other-options").fadeOut(200);
   });
+
+
+  
+const isValidEmail = (email) => {
+    const re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    return re.test(String(email).toLowerCase());
+};
+
+const form = document.querySelector("#login-form");
+const thankyou = document.querySelector(".thank-you");
+const nameInput = document.querySelector(
+    'input[name="name"]'
+);
+const emaillInput = document.querySelector(
+    'input[name="emaill"]'
+);
+
+const inputs = [nameInput, emaillInput];
+
+let isFormValid = false;
+let isValidationOn = false;
+
+const resetElm = (elm) =>{
+    elm.classList.remove("invalid");
+};
+
+const invalidateElm = (elm) => {
+    elm.classList.add("invalid");
+};
+
+const validateInputs = () => {
+    if(!isValidationOn) return;
+
+    isFormValid = true;
+    inputs.forEach(resetElm)
+
+    if (!nameInput.value){
+        isFormValid = false;
+        invalidateElm(nameInput);
+    }
+
+    if (!isValidEmail(emaillInput.value)){
+        isFormValid = false;
+        invalidateElm(emaillInput);
+    }
+    
+};
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    isValidationOn = true;
+    validateInputs();
+    if(isFormValid) {
+        
+        thankyou.classList.remove("hidden");
+    }
+});
+
+inputs.forEach((input) => {
+    input.addEventListener("input", () => {
+        validateInputs();
+    });
+});
+
+

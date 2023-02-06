@@ -51,11 +51,15 @@
           <input type="password" name="repass" placeholder="Repeat password">
           <a href="#" class="login-btn" id="signup-btn">SIGN UP</a>
         </form>
-      
+        
         <form id="login-form">
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="password" name="pass" placeholder="Password">
-          <a href="#" class="login-btn">LOG IN</a>
+          <div class="thank-you hidden"><p class="note form-success">
+            Incorrect email or password.</p></div>
+          <input class="formc" type="email" name="emaill" placeholder="E-mail">
+          <div class="error-hint hidden"></div>
+          <input class="formc" type="password" name="name" placeholder="Password">
+          <div class="error-hint hidden"></div>
+          <button class="btn btn-block">LOG IN</button>
         </form>
         
         <form id="fpass-form">
