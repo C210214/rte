@@ -147,8 +147,9 @@ function backgroundChanger() {
   document.querySelector("video").src = myVideos[myIndex]
 }
 
-setTimeout(()=>{
-    const load = document.getElementById('load');
-    load.style.display = 'none';
-}, 3000)
+const load = document.getElementById('load');
+window.onload = function loadDefFrame() {
+    setTimeout(function () {
+     load.style.display = 'none';
+   },3000)};
 
