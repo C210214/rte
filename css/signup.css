@@ -280,13 +280,15 @@ nav.menu ul li a{
   letter-spacing: 0.1em;
   margin-bottom: 30px;
 }
+.box #form #email:focus{
+  background-color: #faf7f5;
+}
 .box #submit{
   letter-spacing: 0.1em;
   font-size: 15px;
   font-weight: 400;
-  
-  
 }
+
 .box #submitemail{
   width: 100px;
   border: none;

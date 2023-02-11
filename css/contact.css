@@ -418,17 +418,17 @@ textarea:focus{
   margin-top:-15px;
 }
 .contact button.btn {
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     background: #886e5a;
     color: #ffffff;
     -webkit-box-align: center;
     align-items: center;
-    width: 98%;
+    width: 97.2%;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .contact button.btn:hover{
   background-color: #312923;

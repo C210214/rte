@@ -254,6 +254,7 @@ nav.menu ul li a{
 }
 #wrapper{
   height: 100vh;
+  width: 100%;
 }
 .container{
   padding-top: 90px;
@@ -263,7 +264,208 @@ nav.menu ul li a{
     width: 100%;
     box-sizing: border-box;
     text-transform: uppercase;
+    overflow: auto;
 }
+.product-container{
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+.ich{
+  flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+}
+.product-container ion-icon{
+  cursor: pointer;
+  color: #886e5a;
+  font-size: 30px;
+  margin-top: 49px;
+}
+@media (min-width: 960px){
+  .products {
+      flex-grow: 0;
+      max-width: 100%;
+      flex-basis: 100%;
+  }
+  }
+#pro{
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.anh{
+  flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+}
+.product img{
+  width: 130px;
+  
+}
+.ten{
+  flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.product h2{
+  width: 398px;
+  font-weight: 200;
+  margin-top: 45px;
+  font-size: 20px;
+  color: #312923;
+}
+.quantity{
+  flex-grow: 0;
+    max-width: 8.33333335%;
+    flex-basis: 8.33333335%;
+}
+.price{
+  flex-grow: 0;
+    max-width: 8.33333335%;
+    flex-basis: 8.33333335%;
+}
+.product h3{ 
+  font-weight: 200;
+  margin-top: 45px;
+  color: #312923;
+}
+.fa-chevron-right,
+.fa-chevron-left{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #886e5a;
+  cursor: pointer;
+}
+.basketTotalContainer{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    top:69%;
+    position: absolute;
+}
+.basketTotalContainer h4{
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-size: 20px;
+  color: #312923;
+}
+.form-row{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    top: 77%;
+    position: absolute;
+
+}
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.check input {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #886e5a;
+  border-radius: 15%;
+  cursor: pointer;
+  
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+}
+
+.check input:checked ~ .checkbox {
+  background-color: #312923;
+}
+
+.check input:checked ~ .checkbox:after {
+  display: block;
+}
+.btn{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 79.5%;
+  position: absolute;
+}
+button.btn {
+  border-radius: 4px;
+  text-align: center;
+  background: #886e5a;
+  color: #faf7f5;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: 17px auto;
+  padding: 14px;
+  width: 15%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 200;
+  font-size: 15px;
+}
+button.btn:hover{
+  background-color: #312923;
+}
+
 .title{
   margin-top: 28px;
   text-align: center;
@@ -290,23 +492,23 @@ nav.menu ul li a{
   display: flex;
   justify-content: center;
     align-items: center;
-    position: absolute;
-    top:83%;
+    position: sticky;
+    top:85%;
 }
 .backshop{
   cursor: pointer;
-  font-weight: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.00938em;
   text-align: center;
-  padding-bottom: 10px;
-  margin-left: 17px;
+ 
+
 }
 .empty{
+  display: flex;
   font-weight: 200;
-    top: 47%;
+    top: 48%;
     position: absolute;
 }
 .back{
