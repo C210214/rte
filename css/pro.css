@@ -171,6 +171,25 @@ header #logo{
   }
 }
 
+.tb{
+  top: 70px;
+  left: auto;
+  right: 24px;
+  justify-content: flex-end;
+  z-index: 1400;
+  position: fixed;
+  align-items: center;
+  display: none;
+}
+.tbb{
+  padding: 12px 15px;
+  background-color: #312923;
+  border-radius: 5px;
+  color: #faf7f5;
+  font-weight: 200;
+  font-size: 16px;
+  box-shadow: rgb(50 50 93 / 11%) 0px 4px 6px, rgb(0 0 0 / 8%) 0px 1px 3px;
+}
 
 nav{
   position:fixed;
@@ -560,8 +579,7 @@ nav li {
   margin-bottom: 110px;
 }
 
-.grid > [class*=column-] {
-}
+
 
 .grid.menu > [class*=column-] {
   padding: 0.5rem 1rem 0.5rem 1rem;

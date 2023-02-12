@@ -275,17 +275,38 @@ nav.menu ul li a{
   flex-wrap: wrap;
   padding-bottom: 20px;
   overflow: auto;
+  height: 450px;
 }
 .ich{
   flex-grow: 0;
     max-width: 8.333333%;
     flex-basis: 8.333333%;
 }
+.ich button{
+  border-radius: 4px;
+    text-align: center;
+    background: #faf7f5;
+    color: #faf7f5;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 37px auto;
+    padding: 14px;
+    width: 55%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: 200;
+    font-size: 15px;
+  
+}
 .product-container ion-icon{
   cursor: pointer;
   color: #886e5a;
   font-size: 30px;
-  margin-top: 49px;
+ 
 }
 @media (min-width: 960px){
   .products {
@@ -313,20 +334,21 @@ nav.menu ul li a{
 }
 .ten{
   flex-grow: 0;
-    max-width: 50%;
-    flex-basis: 50%;
+    max-width: 45%;
+    flex-basis: 45%;
 }
 .product h2{
-  width: 398px;
+  width: 100%;
   font-weight: 200;
-  margin-top: 45px;
+  margin-top: 48px;
   font-size: 20px;
   color: #312923;
+  text-align: left;
 }
 .quantity{
   flex-grow: 0;
-    max-width: 8.33333335%;
-    flex-basis: 8.33333335%;
+    max-width: 15.33333335%;
+    flex-basis: 15.33333335%;
 }
 .price{
   flex-grow: 0;
@@ -335,7 +357,7 @@ nav.menu ul li a{
 }
 .product h3{ 
   font-weight: 200;
-  margin-top: 45px;
+  margin-top: 48px;
   color: #312923;
 }
 .fa-chevron-right,

@@ -9,7 +9,6 @@ let products = [
   }
 ];
 
-
 for (let i=0; i<carts.length; i++){
   carts[i].addEventListener('click', ()=>{
     cartsNumbers(products[i]);
@@ -81,24 +80,27 @@ function totalCost(product) {
   }
 }
 
+
 function displayCart(){
+  
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector
   (".products");
-  
   let cartCost = localStorage.getItem('totalCost');
-
   
 
   console.log(cartItems);
   if( cartItems && productContainer ){
+    
     productContainer.innerHTML ='';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="product" id="pro">
         <div class="ich">
+        <button onclick="deleteItemFromCart(${item.tag})">
         <ion-icon name="close-outline"></ion-icon>
+        </button>
         </div>
         <div class="anh">
         <img src="./itemimg/${item.tag}-1.png">
@@ -110,11 +112,12 @@ function displayCart(){
           <h3><i class="fa fa-chevron-left" aria-hidden="true"></i> ${item.incart}  <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </h3>
         </div>
-        <div class="price"><h3>${cartCost}¥</h3></div>
+        <div class="price"><h3>${item.price*(item.incart)}¥</h3></div>
       </div>
       `;
+      
     });
-
+    
     productContainer.innerHTML += `
     <div class="basketTotalContainer">
       <h4 class="basketTotalTitle">TOTAL: ${cartCost}¥</h4>
@@ -132,3 +135,34 @@ function displayCart(){
 
 onLoadCartNumbers();
 displayCart();
+
+
+function removeID(){ 
+  var pro = document.getElementById('pro')
+  var e=document.getElementById('isempty');
+  if(pro) e.remove();
+}
+removeID( "myElement" );
+
+
+function deleteItemFromCart(){
+  let cartItems = JSON.parse (localStorage.getItem('productsInCart'));
+
+  let newcart = cartItems.filter((item) => item.tag);
+
+  localStorage.setItem('productsInCart', JSON.stringify(newcart));
+
+  displayCart();
+  onLoadCartNumbers();
+}
+
+
+
+
+function clickBtn1(){
+  var tb = document.getElementById('added');
+  tb.style.display = 'flex';
+  setTimeout(()=>{
+    tb.style.display = 'none';
+  }, 3500)
+}

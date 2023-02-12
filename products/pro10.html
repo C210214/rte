@@ -39,6 +39,11 @@
       </div>
     </header>
     <div id="wrappera">
+      <div class="tb" id="added">
+        <div class="tba">
+          <div class="tbb">Item was added to cart</div>
+        </div>
+      </div>
       <main>
         <div class="container">
           
@@ -66,11 +71,11 @@
               <h2>¥1200</h2>
               <div class="buttons_added">
                 <input class="minus is-form" type="button" value="-">
-                <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                <input id="mySelect" aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
                 <input class="plus is-form" type="button" value="+">
               </div>
               <br>
-              <button class="add">ADD TO CART</button>
+              <button onclick="clickBtn1()" class="add">ADD TO CART</button>
               <div class="description">
                 <div class="text1">コーヒーの出がらしやお砂糖が配合されたボディスクラブです。エスプレッソを抽出した後のコーヒー豆が古い角質を取り除き、天然の保湿剤であるお砂糖がお肌の潤いを保ちます。</div><br>
                 
@@ -143,6 +148,6 @@
   <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-  <script src="../javascript/shop.js"></script>  
+  <script src="../javascript/shop.js"></script><script src="../javascript/pro10.js"></script>  
   </body>
 </html>

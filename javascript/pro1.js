@@ -6,140 +6,7 @@ let products = [
     img:'itemimg/item1-1.png',
     price:300,
     incart:0
-  },
-  {
-    name:'へちまスポンジ｜LOOFAH SPONGE',
-    tag:'pro2',
-    img:'itemimg/item2-1.png',
-    price:'400',
-    incart:0
-  },
-  {
-    name:'折り畳みストロー｜FOLDABLE STRAW',
-    tag:'pro3',
-    img:'itemimg/item3-1.png',
-    price:'600',
-    incart:0
-  },
-  {
-    name:'竹綿棒｜BAMBOO ORGANIC COTTON SWABS',
-    tag:'pro4',
-    img:'itemimg/item4-1.png',
-    price:'350',
-    incart:0
-  },
-  {
-    name:'オーガニックコットン巾着（大）｜LARGE ORGANIC COTTON PRODUCE BAG',
-    tag:'pro5',
-    img:'itemimg/item5-1.png',
-    price:'900',
-    incart:0
-  },
-  {
-    name:'竹カトラリーセット｜BAMBOO CUTLERY SETS',
-    tag:'pro6',
-    img:'itemimg/item6-1.png',
-    price:'1500',
-    incart:0
-  },
-  {
-    name:'草ストロー｜GRASS STRAW',
-    tag:'pro7',
-    img:'itemimg/item7-1.png',
-    price:'400',
-    incart:0
-  },
-  {
-    name:'スタッシャーシリコーンバッグ　スタンドアップ ミディアム｜STASHER STAND-UP MEDIUM',
-    tag:'pro8',
-    img:'itemimg/item8-1.png',
-    price:'1000',
-    incart:0
-  },
-  {
-    name:'ME TIME SET',
-    tag:'pro9',
-    img:'itemimg/item9-1.png',
-    price:'1500',
-    incart:0
-  },
-  {
-    name:'エスプレッソボディショット ｜ESPRESSO BODY SCRUB',
-    tag:'pro10',
-    img:'itemimg/item10-1.png',
-    price:'1200',
-    incart:0
-  },
-  {
-    name:'【TGTW】バンブー歯ブラシスタンド｜BAMBOO TOOTHBRUSH STAND',
-    tag:'pro11',
-    img:'itemimg/item11-1.png',
-    price:'300',
-    incart:0
-  },
-  {
-    name:'パロサント｜PALO SANTO WOOD',
-    tag:'pro12',
-    img:'itemimg/item12-1.png',
-    price:'800',
-    incart:0
-  },
-  {
-    name:'ディッシュブラシ(長)｜LONG DISH BRUSH',
-    tag:'pro13',
-    img:'itemimg/item13-1.png',
-    price:'1100',
-    incart:0
-  },
-  {
-    name:'ポーチ付 天然猪毛のトラベルミニヘアブラシ｜PIG-HAIR TRAVEL MINI BRUSH',
-    tag:'pro14',
-    img:'itemimg/item14-1.png',
-    price:'2000',
-    incart:0
-  },
-  {
-    name:'ヴィーガンソイキャンドルツリー｜ VEGAN SOY WAX CANDLE TREE',
-    tag:'pro15',
-    img:'itemimg/item15-1.png',
-    price:'1200',
-    incart:0
-  },
-  {
-    name:'セルフケアセット ｜SELF CARE SET',
-    tag:'pro16',
-    img:'itemimg/item16-1.png',
-    price:'3000',
-    incart:0
-  },
-  {
-    name:'オーガニックヴィーガンワックスバー ｜ORGANIC AROMA VEGAN WAX BAR',
-    tag:'pro17',
-    img:'itemimg/item17-1.png',
-    price:'1300',
-    incart:0
-  },
-  {
-    name:'ヴィーガン食器用洗剤ブロック｜VEGAN DISH WASH BLOCK',
-    tag:'pro18',
-    img:'itemimg/item18-1.png',
-    price:'800',
-    incart:0
-  },
-  {
-    name:'スタッシャーシリコーンバッグ　ゴーバッグ｜STASHER GO BAG',
-    tag:'pro19',
-    img:'itemimg/item19-1.png',
-    price:'1200',
-    incart:0
-  },
-  {
-    name:'アップサイクルコルクコースター｜UPCYCLED SANDAL SOLE & CORK COASTER',
-    tag:'pro20',
-    img:'itemimg/item20-1.png',
-    price:'1600',
-    incart:0
-  },
+  }
 ];
 
 
@@ -214,23 +81,27 @@ function totalCost(product) {
   }
 }
 
+
 function displayCart(){
+  
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector
   (".products");
-  
   let cartCost = localStorage.getItem('totalCost');
   
 
   console.log(cartItems);
   if( cartItems && productContainer ){
+    
     productContainer.innerHTML ='';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="product" id="pro">
         <div class="ich">
+        <button onclick="deleteItemFromCart(${item.tag})">
         <ion-icon name="close-outline"></ion-icon>
+        </button>
         </div>
         <div class="anh">
         <img src="./itemimg/${item.tag}-1.png">
@@ -242,11 +113,12 @@ function displayCart(){
           <h3><i class="fa fa-chevron-left" aria-hidden="true"></i> ${item.incart}  <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </h3>
         </div>
-        <div class="price"><h3>${cartCost}¥</h3></div>
+        <div class="price"><h3>${item.price*(item.incart)}¥</h3></div>
       </div>
       `;
+      
     });
-
+    
     productContainer.innerHTML += `
     <div class="basketTotalContainer">
       <h4 class="basketTotalTitle">TOTAL: ${cartCost}¥</h4>
@@ -264,3 +136,34 @@ function displayCart(){
 
 onLoadCartNumbers();
 displayCart();
+
+
+function removeID(){ 
+  var pro = document.getElementById('pro')
+  var e=document.getElementById('isempty');
+  if(pro) e.remove();
+}
+removeID( "myElement" );
+
+
+function deleteItemFromCart(){
+  let cartItems = JSON.parse (localStorage.getItem('productsInCart'));
+
+  let newcart = cartItems.filter((item) => item.tag);
+
+  localStorage.setItem('productsInCart', JSON.stringify(newcart));
+
+  displayCart();
+  onLoadCartNumbers();
+}
+
+
+
+
+function clickBtn1(){
+  var tb = document.getElementById('added');
+  tb.style.display = 'flex';
+  setTimeout(()=>{
+    tb.style.display = 'none';
+  }, 3500)
+}
